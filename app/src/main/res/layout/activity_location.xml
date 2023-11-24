@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".LocationActivity"
+    android:padding="@dimen/app_padding">
+
+    <TextView
+        android:id="@+id/localization_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_localization"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="@dimen/list_item_size"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/textview_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_localization"
+        android:textSize="@dimen/localization_size"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/textview_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_localization"
+        android:textSize="@dimen/localization_size"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/localization_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/download_localization"
+            android:padding="@dimen/button_padding"
+            android:layout_margin="@dimen/margin_localization"
+            style="@style/ButtonStyle" />
+
+        <Button
+            android:id="@+id/address_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/get_address"
+            android:padding="@dimen/button_padding"
+            android:layout_margin="@dimen/margin_localization"
+            style="@style/ButtonStyle" />
+
+    </LinearLayout>
+
+</LinearLayout>
